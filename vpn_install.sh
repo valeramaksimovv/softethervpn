@@ -64,9 +64,19 @@ echo "ufw allow 1723/tcp"
 echo "enable firewall"
 sudo ufw enable
 
-#Test it
+# Test it
 echo "firewall status"
 sudo ufw status
 
+# SoftEther Server Installation
+echo "Install SoftEtherServer"
+sudo apt-add-repository -y ppa:paskal-07/softethervpn 
+sudo apt update 
+sudo apt -y install softether-vpnserver
+echo "SoftEtherServer installed"
 
+# start the SoftEther VPN server
+
+echo "start the SoftEther VPN server"
+sudo service softether-vpnserver start
 

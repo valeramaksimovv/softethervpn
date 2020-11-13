@@ -80,3 +80,4 @@ echo "SoftEtherServer installed"
 echo "start the SoftEther VPN server"
 sudo service softether-vpnserver start
 
+echo "SoftEther VPN server READY"

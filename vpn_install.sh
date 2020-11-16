@@ -16,9 +16,6 @@ echo softether:softether | chpasswd
 echo "user softether"
 echo "pass softether"
 
-# Reboot server
-# reboot 
-
 # SWAP setting
 echo "swap configure"
 sudo fallocate -l 1G /swapfile
@@ -85,3 +82,8 @@ echo "start the SoftEther VPN server"
 sudo service softether-vpnserver start
 
 echo "SoftEther VPN server READY"
+
+# Reboot server
+# reboot 
+
+echo "Please restart your server"

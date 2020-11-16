@@ -11,6 +11,8 @@ echo "MC installed"
 adduser softether
 echo "user softether add"
 usermod -aG sudo softether
+echo "chpasswd" 
+echo softether:Qwerty-01 | chpasswd
 
 # Reboot server
 # reboot 

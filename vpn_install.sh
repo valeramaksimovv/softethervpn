@@ -11,9 +11,10 @@ echo "MC installed"
 adduser softether
 echo "user softether add"
 usermod -aG sudo softether
-
-# Reboot server
-# reboot 
+echo "chpasswd" 
+echo softether:softether | chpasswd
+echo "user softether"
+echo "pass softether"
 
 # SWAP setting
 echo "swap configure"
@@ -81,3 +82,8 @@ echo "start the SoftEther VPN server"
 sudo service softether-vpnserver start
 
 echo "SoftEther VPN server READY"
+
+# Reboot server
+# reboot 
+
+echo "Please restart your server"

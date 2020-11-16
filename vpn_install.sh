@@ -12,7 +12,9 @@ adduser softether
 echo "user softether add"
 usermod -aG sudo softether
 echo "chpasswd" 
-echo softether:Qwerty-01 | chpasswd
+echo softether:softether | chpasswd
+echo "user softether"
+echo "pass softether"
 
 # Reboot server
 # reboot 
